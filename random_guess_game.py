@@ -5,7 +5,7 @@ import random
 
 def guess_game(guess, ans):
     try:
-        if 0 < guess < 11:
+        if sys.argv[1] < guess < sys.argv[2]:
             if guess == ans:
                 print("Great you guessed right.\n Congratulations!!!!!")
                 return True
